@@ -50,6 +50,10 @@ target 'HighScores2048' do
     # Pods for testing
   end
 
+  target 'HighScores2048Module' do
+    inherit! :complete
+  end
+
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
